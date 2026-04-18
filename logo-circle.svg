@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" role="img" aria-label="Cryozen Klíma kör logó">
+
+  <!-- Fehér alap + kör keret -->
+  <circle cx="100" cy="100" r="92" fill="white" stroke="#2a7a4b" stroke-width="2"/>
+
+  <!-- CRYO -->
+  <text
+    x="100" y="95"
+    text-anchor="middle"
+    font-family="'Segoe UI', system-ui, -apple-system, sans-serif"
+    font-size="44"
+    font-weight="800"
+    letter-spacing="-1"
+    fill="#2a7a4b"
+  >CRYO</text>
+
+  <!-- ZEN -->
+  <text
+    x="100" y="140"
+    text-anchor="middle"
+    font-family="'Segoe UI', system-ui, -apple-system, sans-serif"
+    font-size="44"
+    font-weight="800"
+    letter-spacing="-1"
+    fill="#1f5c38"
+  >ZEN</text>
+
+  <!-- KLÍMA alcím -->
+  <text
+    x="100" y="163"
+    text-anchor="middle"
+    font-family="'Segoe UI', system-ui, -apple-system, sans-serif"
+    font-size="9.5"
+    font-weight="700"
+    letter-spacing="7"
+    fill="#8a8a8a"
+  >KLÍMA</text>
+
+</svg>

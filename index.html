@@ -1,527 +1,627 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cryozen Klíma – Telepítés & Karbantartás</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/svg+xml" href="/logo-circle.svg" />
+    <link rel="icon" type="image/png" href="/logo-circle.png" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cryozen Klíma – Telepítés & Karbantartás</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-
-  <!-- NAV -->
-  <header class="navbar">
-    <div class="container nav-inner">
-      <a href="#" class="logo">
-        <span class="logo-cryo">CRYO</span><span class="logo-zen">ZEN</span>
-        <span class="logo-sub">KLÍMA</span>
-      </a>
-      <nav class="nav-links">
-        <a href="#services">Szolgáltatások</a>
-        <a href="#brands">Partnerek</a>
-        <a href="#hem">HEM program</a>
-        <a href="#about">Rólunk</a>
-        <a href="#contact" class="btn-nav">Kapcsolat</a>
-      </nav>
-      <button class="hamburger" id="hamburger" aria-label="Menü">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-    <div class="mobile-menu" id="mobileMenu">
-      <a href="#services" class="mobile-link">Szolgáltatások</a>
-      <a href="#brands" class="mobile-link">Partnerek</a>
-      <a href="#hem" class="mobile-link">HEM program</a>
-      <a href="#about" class="mobile-link">Rólunk</a>
-      <a href="#contact" class="mobile-link">Kapcsolat</a>
-    </div>
-  </header>
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container hero-inner">
-      <div class="hero-text">
-        <p class="hero-label">Precíziós klímaszerelés</p>
-        <h1>Komfort minden<br /><span class="accent">évszakban</span></h1>
-        <p class="hero-desc">
-          límák és hőszivattyúk szakszerű telepítése,<br class="br-desktop" />
-          karbantartása és szervize – megbízható csapattól.
-        </p>
-        <div class="hero-cta">
-          <a href="#contact" class="btn-primary">Ajánlatot kérek</a>
-          <a href="#services" class="btn-ghost">Szolgáltatások</a>
-        </div>
-      </div>
-      <div class="hero-visual">
-        <div class="hero-card">
-          <div class="hc-icon">❄️</div>
-          <div class="hc-text">
-            <strong>Hűtés &amp; fűtés</strong>
-            <span>egész éves megoldás</span>
-          </div>
-        </div>
-        <div class="hero-card">
-          <div class="hc-icon">🌿</div>
-          <div class="hc-text">
-            <strong>Energiahatékony</strong>
-            <span>Akár A+++ besorolású készülékek</span>
-          </div>
-        </div>
-        <div class="hero-card">
-          <div class="hc-icon">🔧</div>
-          <div class="hc-text">
-            <strong>Szakszerű szerelés</strong>
-            <span>Szakmailag minősített technikusok</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="hero-bg-shape"></div>
-  </section>
-
-  <!-- USP BAR -->
-  <section class="usp-bar">
-    <div class="container usp-inner">
-      <div class="usp-item">
-        <div class="usp-icon">📋</div>
-        <div class="usp-text">
-          <strong>Ingyenes helyszíni felmérés</strong>
-          <span>Megrendelés esetén díjmentes</span>
-        </div>
-      </div>
-      <div class="usp-divider"></div>
-      <div class="usp-item">
-        <div class="usp-icon">💰</div>
-        <div class="usp-text">
-          <strong>Átlátható árazás</strong>
-          <span>Nincsenek rejtett költségek</span>
-        </div>
-      </div>
-      <div class="usp-divider"></div>
-      <div class="usp-item">
-        <div class="usp-icon">🛡️</div>
-        <div class="usp-text">
-          <strong>Garanciális munkavégzés</strong>
-          <span>10 év telepítési garancia</span>
-        </div>
-      </div>
-      <div class="usp-divider"></div>
-      <div class="usp-item">
-        <div class="usp-icon">📍</div>
-        <div class="usp-text">
-          <strong>Budapest és agglomeráció</strong>
-          <span>Gyors kiszállás az egész régióban</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICES -->
-  <section class="services section" id="services">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-label">Mit kínálunk</p>
-        <h2>Szolgáltatásaink</h2>
-        <p class="section-desc">Mindent egy kézből – a felmérésétől a szervizig.</p>
-      </div>
-      <div class="services-grid">
-
-        <div class="service-card">
-
-          <div class="service-icon">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M24 6C24 6 10 16 10 28a14 14 0 0028 0C38 16 24 6 24 6z" stroke="currentColor"
-                stroke-width="2.5" />
-              <path d="M24 20v8M20 24h8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
-            </svg>
-          </div>
-          <h3>Hőszivattyú telepítés</h3>
-          <p>Levegő–levegő és levegő–víz hőszivattyúk komplett kiépítése. Energiahatékony fűtés-hűtés megoldás, akár
-            400%-os hatásfokkal.</p>
-          <ul class="service-list">
-            <li>Rendszertervezés és méretezés</li>
-   
-            <li>Okos vezérlés beállítása</li>
-          </ul>
-        </div>
-        <div class="service-card  service-card--featured">
-          <div class="service-badge">Legnépszerűbb</div>
-          <div class="service-icon">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="4" y="12" width="40" height="14" rx="3" stroke="currentColor" stroke-width="2.5" />
-              <rect x="4" y="30" width="40" height="10" rx="3" stroke="currentColor" stroke-width="2.5" />
-              <circle cx="36" cy="19" r="2.5" fill="currentColor" />
-              <line x1="14" y1="19" x2="28" y2="19" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
-            </svg>
-          </div>
-          <h3>Lakossági klíma telepítés</h3>
-          <p>Beltéri és kültéri egység szakszerű elhelyezése, csővezetékek kiépítése. Minden típusú falra.</p>
-          <ul class="service-list">
-            <li>Helyszíni felmérés</li>
-            <li>Anyagbeszerzés</li>
-            <li>Üzembe helyezés és beállítás</li>
-
-          </ul>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="2.5" />
-              <path d="M24 16v4M24 28v4M16 24h4M28 24h4" stroke="currentColor" stroke-width="2.5"
-                stroke-linecap="round" />
-              <circle cx="24" cy="24" r="4" stroke="currentColor" stroke-width="2.5" />
-            </svg>
-          </div>
-          <h3>Karbantartás &amp; szerviz</h3>
-          <p>Éves megelőző karbantartás, szűrőtisztítás, hűtőközeg ellenőrzés. Meghibásodás esetén gyors és hatékony
-            javítás, pótalkatrész biztosítással.</p>
-          <ul class="service-list">
-            <li>Éves karbantartási csomag</li>
-            <li>Hibadiagnosztika</li>
-            <li>Pótalkatrész csere</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- HOW IT WORKS -->
-  <section class="howto section" id="howto">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-label">Hogyan működik</p>
-        <h2>4 lépés a komfortig</h2>
-      </div>
-      <div class="steps">
-        <div class="step">
-          <div class="step-num">01</div>
-          <h4>Kapcsolatfelvétel</h4>
-          <p>Írjon vagy hívjon minket – rövid időn belül visszajelzünk és időpontot egyeztetünk.</p>
-        </div>
-        <div class="step-arrow">→</div>
-        <div class="step">
-          <div class="step-num">02</div>
-          <h4>Helyszíni felmérés</h4>
-          <p>Szakembereink felmérik az ingatlant és személyre szabott ajánlatot adnak.</p>
-        </div>
-        <div class="step-arrow">→</div>
-        <div class="step">
-          <div class="step-num">03</div>
-          <h4>Telepítés</h4>
-          <p>Precíz és gyors kivitelezés – egy munkanap alatt.</p>
-        </div>
-        <div class="step-arrow">→</div>
-        <div class="step">
-          <div class="step-num">04</div>
-          <h4>Átadás &amp; garancia</h4>
-          <p>Betanítjuk a kezelést, átadjuk a dokumentációt és akár 10 év telepítési garanciát vállalunk.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- BRANDS -->
-  <section class="brands section" id="brands">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-label">Márkáink</p>
-        <h2>Prémium gyártói partnerségek</h2>
-        <p class="section-desc">Csak elismert, megbízható gyártók termékeit telepítjük és szereljük.</p>
-      </div>
-      <div class="brands-grid">
-        <div class="brand-card">
-          <div class="brand-logo">GREE</div>
-          <p>A világ legnagyobb klíma&shy;gyártója. Kiemelkedő energiahatékonyság, innovatív technológia és megbízható
-            minőség.</p>
-          <div class="brand-tags">
-            <span>Split klíma</span>
-            <span>Hőszivattyú</span>
-            <span>Multi-split</span>
-          </div>
-        </div>
-        <div class="brand-card brand-card--accent">
-          <div class="brand-logo">MIDEA</div>
-          <p>Globálisan elismert márka kiváló ár-érték aránnyal. Modern dizájn és okosotthon integráció.</p>
-          <div class="brand-tags">
-            <span>Split klíma</span>
-            <span>Inverteres</span>
-            <span>Wi-Fi vezérlés</span>
-          </div>
-        </div>
-        <div class="brand-card">
-          <div class="brand-logo">DAIKIN</div>
-          <p>Japán precizitás és csúcstechnológia. Az iparág egyik legelismertebb prémium márkája.</p>
-          <div class="brand-tags">
-            <span>Hőszivattyú</span>
-            <span>VRV rendszer</span>
-            <span>Levegőtisztítás</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- HEM -->
-  <section class="hem section" id="hem">
-    <div class="container">
-      <div class="hem-inner">
-        <div class="hem-text">
-          <p class="section-label">Állami támogatás</p>
-          <h2>HEM program –<br /><span class="accent">akár 30% támogatás</span></h2>
-          <p>A Háztartási Energetikai Modernizációs (HEM) program keretében lakossági ügyfelek vissza nem térítendő támogatást igényelhetnek energiahatékony hőszivattyú és klímarendszer telepítéséhez. Segítünk a teljes ügyintézésben, az igénylésétől a kivitelezésig.</p>
-          <a href="#contact" class="btn-primary" style="margin-top: 12px; display: inline-flex;">Érdeklődjön most →</a>
-        </div>
-        <div class="hem-cards">
-          <div class="hem-card">
-            <h4>Vissza nem térítendő támogatás</h4>
-            <p>A beruházás akár 30%-a visszaigényelhető állami forrásból, a készülék típusától és az ingatlan besorolásától függően.</p>
-          </div>
-          <div class="hem-card">
-            <h4>Segítünk az igénylésben</h4>
-            <p>Az adminisztráció összetett lehet – mi végigkísérjük az igénylési folyamatot és biztosítjuk a szükséges dokumentációt.</p>
-          </div>
-          <div class="hem-card">
-            <h4>Lakóépületekre vonatkozik</h4>
-            <p>A program elsősorban meglévő lakóingatlanok energetikai korszerűsítésére irányul, hőszivattyú és split rendszer telepítésére egyaránt.</p>
-          </div>
-        </div>
-      </div>
-      <p class="hem-disclaimer">A támogatás mértéke és feltételei változhatnak. A pontos feltételekről érdeklődjön nálunk vagy a hivatalos pályázati kiírásban.</p>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section class="about section" id="about">
-    <div class="container about-inner">
-      <div class="about-text">
-        <p class="section-label">Rólunk</p>
-        <h2>Szakértelem és<br />elkötelezettség az első naptól</h2>
-        <p>A Cryozen Klíma friss szemlélettel, de komoly szakmai háttérrel lépett piacra. Technikusaink gyártói képesítéssel rendelkeznek, és a Gree, Midea, Daikin márkák termékeihez egyaránt értenek. Célunk, hogy minden ügyfelünk pontosan azt kapja, amire szüksége van – felesleges bonyolítás nélkül.</p>
-        <div class="about-features">
-          <div class="about-feat">
-            <div class="af-icon">✓</div>
-            <div>
-              <strong>Képesített technikusok</strong>
-              <p>Technikusaink rendelkeznek az előírt klímaszerelői szakképesítéssel.</p>
-            </div>
-          </div>
-          <div class="about-feat">
-            <div class="af-icon">✓</div>
-            <div>
-              <strong>Átlátható árazás</strong>
-              <p>Nincsenek rejtett költségek – az ajánlatban minden tétel részletesen szerepel.</p>
-            </div>
-          </div>
-          <div class="about-feat">
-            <div class="af-icon">✓</div>
-            <div>
-              <strong>Személyes hozzáállás</strong>
-              <p>Kis csapatként minden megrendelőre egyforma figyelmet fordítunk.</p>
-            </div>
-          </div>
-          <div class="about-feat">
-            <div class="af-icon">✓</div>
-            <div>
-              <strong>Teljes körű ügyintézés</strong>
-              <p>A felmérésétől a garanciális papírokig mindent mi intézünk.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="about-visual">
-        <div class="av-card av-card--top">
-          <span class="av-number">3</span>
-          <span class="av-label">prémium márka</span>
-        </div>
-        <div class="av-card av-card--main">
-          <span class="av-number">Akár 10 év</span>
-          <span class="av-label">telepítési garancia</span>
-        </div>
-        <div class="av-card av-card--bottom">
-          <span class="av-number">100%</span>
-          <span class="av-label">személyes figyelem</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="contact section" id="contact">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-label">Kapcsolat</p>
-        <h2>Kérjen ingyenes ajánlatot!</h2>
-        <p class="section-desc">Töltse ki az alábbi űrlapot és hamarosan felvesszük Önnel a kapcsolatot.</p>
-      </div>
-      <div class="contact-wrapper">
-        <form class="contact-form" onsubmit="handleSubmit(event)">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="name">Neve</label>
-              <input type="text" id="name" name="name" placeholder="Kovács János" required />
-            </div>
-            <div class="form-group">
-              <label for="phone">Telefonszám</label>
-              <input type="tel" id="phone" name="phone" placeholder="+36 30 123 4567" required />
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="email">E-mail cím</label>
-            <input type="email" id="email" name="email" placeholder="pelda@email.hu" />
-          </div>
-          <div class="form-group">
-            <label for="service">Szolgáltatás</label>
-            <select id="service" name="service">
-              <option value="">Válasszon szolgáltatást...</option>
-              <option value="telepites">Split klíma telepítés</option>
-              <option value="hoszivattyu">Hőszivattyú telepítés</option>
-              <option value="karbantartas">Karbantartás / szerviz</option>
-              <option value="egyeb">Egyéb megkeresés</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="message">Üzenet (opcionális)</label>
-            <textarea id="message" name="message" rows="4"
-              placeholder="Írja le röviden az igényét, pl. ingatlan mérete, helyiség száma..."></textarea>
-          </div>
-          <button type="submit" class="btn-primary btn-full">Ajánlatot kérek →</button>
-          <p class="form-note">Az adatokat kizárólag a megkeresés megválaszolásához használjuk fel.</p>
-        </form>
-        <div class="contact-info">
-          <div class="ci-item">
-            <div class="ci-icon">📞</div>
-            <div>
-              <strong>Telefon</strong>
-              <a href="tel:+36301234567">+36 70 405 9494</a>
-            </div>
-          </div>
-          <div class="ci-item">
-            <div class="ci-icon">✉️</div>
-            <div>
-              <strong>E-mail</strong>
-              <a href="mailto:cryzenklima@gmail.com">cryzenklima@gmail.com</a>
-            </div>
-          </div>
-          <div class="ci-item">
-            <div class="ci-icon">📍</div>
-            <div>
-              <strong>Munkaterület</strong>
-              <span>Budapest és agglomeráció</span>
-            </div>
-          </div>
-          <div class="ci-item">
-            <div class="ci-icon">🕐</div>
-            <div>
-              <strong>Elérhetőség</strong>
-              <span>H–V: 6:00 – 22:00</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
+  <body>
+    <!-- NAV -->
+    <header class="navbar">
+      <div class="container nav-inner">
         <a href="#" class="logo">
           <span class="logo-cryo">CRYO</span><span class="logo-zen">ZEN</span>
           <span class="logo-sub">KLÍMA</span>
         </a>
-        <p>Precíziós klímaszerelés és karbantartás – megbízható csapattól.</p>
+        <nav class="nav-links">
+          <a href="#services">Szolgáltatások</a>
+          <a href="#brands">Partnerek</a>
+          <a href="#hem">HEM program</a>
+          <a href="#about">Rólunk</a>
+          <a href="#contact" class="btn-nav">Kapcsolat</a>
+        </nav>
+        <button class="hamburger" id="hamburger" aria-label="Menü">
+          <span></span><span></span><span></span>
+        </button>
       </div>
-      <div class="footer-links">
-        <strong>Szolgáltatások</strong>
-        <a href="#services">Split klíma telepítés</a>
-        <a href="#services">Hőszivattyú telepítés</a>
-        <a href="#services">Karbantartás &amp; szerviz</a>
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#services" class="mobile-link">Szolgáltatások</a>
+        <a href="#brands" class="mobile-link">Partnerek</a>
+        <a href="#hem" class="mobile-link">HEM program</a>
+        <a href="#about" class="mobile-link">Rólunk</a>
+        <a href="#contact" class="mobile-link">Kapcsolat</a>
       </div>
-      <div class="footer-links">
-        <strong>Partnerek</strong>
-        <a href="#brands">Gree</a>
-        <a href="#brands">Midea</a>
-        <a href="#brands">Daikin</a>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hero-label">Precíziós klímaszerelés</p>
+          <h1>Komfort minden<br /><span class="accent">évszakban</span></h1>
+          <p class="hero-desc">
+            Klímák és hőszivattyúk szakszerű telepítése,<br
+              class="br-desktop"
+            />
+            karbantartása és szervize
+          </p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn-primary">Ajánlatot kérek</a>
+            <a href="#services" class="btn-ghost">Szolgáltatások</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-card">
+            <div class="hc-icon">❄️</div>
+            <div class="hc-text">
+              <strong>Hűtés &amp; fűtés</strong>
+              <span>egész éves megoldás</span>
+            </div>
+          </div>
+          <div class="hero-card">
+            <div class="hc-icon">🌿</div>
+            <div class="hc-text">
+              <strong>Energiahatékony</strong>
+              <span>Akár A+++ besorolású készülékek</span>
+            </div>
+          </div>
+          <div class="hero-card">
+            <div class="hc-icon">🔧</div>
+            <div class="hc-text">
+              <strong>Szakszerű szerelés</strong>
+              <span>Szakmailag minősített technikusok</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="footer-links">
-        <strong>Kapcsolat</strong>
-        <a href="tel:+36704059494">+36 70 405 9494</a>
-        <a href="mailto:cryzenklima@gmail.com">cryzenklima@gmail.com</a>
-        <span>Budapest és agglomeráció</span>
+      <div class="hero-bg-shape"></div>
+    </section>
+
+    <!-- USP BAR -->
+    <section class="usp-bar">
+      <div class="container usp-inner">
+        <div class="usp-item">
+          <div class="usp-icon">📋</div>
+          <div class="usp-text">
+            <strong>Díjmentes helyszíni felmérés</strong>
+            <span>Megrendelés esetén</span>
+          </div>
+        </div>
+        <div class="usp-divider"></div>
+        <div class="usp-item">
+          <div class="usp-icon">💰</div>
+          <div class="usp-text">
+            <strong>Átlátható árazás</strong>
+            <span>Nincsenek rejtett költségek</span>
+          </div>
+        </div>
+        <div class="usp-divider"></div>
+        <div class="usp-item">
+          <div class="usp-icon">🛡️</div>
+          <div class="usp-text">
+            <strong>Garanciális munkavégzés</strong>
+            <span>Telepítési és gyártói garancia</span>
+          </div>
+        </div>
+        <div class="usp-divider"></div>
+        <div class="usp-item">
+          <div class="usp-icon">📍</div>
+          <div class="usp-text">
+            <strong>Budapest és agglomeráció</strong>
+            <span>Gyors kiszállás az egész régióban</span>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="footer-bottom">
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services section" id="services">
       <div class="container">
-        <span>© 2026 Cryozen Klíma. Minden jog fenntartva.</span>
+        <div class="section-header">
+          <p class="section-label">Mit kínálunk</p>
+          <h2>Szolgáltatásaink</h2>
+          <p class="section-desc">
+            Mindent egy kézből – a felmérésétől a szervizig.
+          </p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <svg
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M24 6C24 6 10 16 10 28a14 14 0 0028 0C38 16 24 6 24 6z"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                />
+                <path
+                  d="M24 20v8M20 24h8"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <h3>Hőszivattyú telepítés</h3>
+            <p>
+              Levegő–levegő és levegő–víz hőszivattyúk komplett kiépítése.
+              Energiahatékony fűtés-hűtés megoldás, akár 400%-os hatásfokkal.
+            </p>
+            <ul class="service-list">
+              <li>Rendszertervezés és méretezés</li>
+
+              <li>Okos vezérlés beállítása</li>
+            </ul>
+          </div>
+          <div class="service-card service-card--featured">
+            <div class="service-badge">Legnépszerűbb</div>
+            <div class="service-icon">
+              <svg
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="4"
+                  y="12"
+                  width="40"
+                  height="14"
+                  rx="3"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                />
+                <rect
+                  x="4"
+                  y="30"
+                  width="40"
+                  height="10"
+                  rx="3"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                />
+                <circle cx="36" cy="19" r="2.5" fill="currentColor" />
+                <line
+                  x1="14"
+                  y1="19"
+                  x2="28"
+                  y2="19"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <h3>Lakossági klíma telepítés</h3>
+            <p>
+              Beltéri és kültéri egység szakszerű elhelyezése, csővezetékek
+              kiépítése. Minden típusú falra.
+            </p>
+            <ul class="service-list">
+              <li>Helyszíni felmérés</li>
+              <li>Anyagbeszerzés</li>
+              <li>Üzembe helyezés és beállítás</li>
+            </ul>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <svg
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="24"
+                  cy="24"
+                  r="16"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                />
+                <path
+                  d="M24 16v4M24 28v4M16 24h4M28 24h4"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                />
+                <circle
+                  cx="24"
+                  cy="24"
+                  r="4"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                />
+              </svg>
+            </div>
+            <h3>Karbantartás &amp; szerviz</h3>
+            <p>
+              Beltéri és kültéri egységek mélytisztítása, gőzgépes
+              fertőtlenítése és aktív garanciajegy érvényesítése. Meghibásodás
+              esetén hibadiagnosztika és hatékony javítás.
+            </p>
+            <ul class="service-list">
+              <li>Gyors kiszállás</li>
+              <li>Forrógőzős és vegyszeres tisztítás</li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-  </footer>
+    </section>
 
-  <div id="toast" class="toast" aria-live="polite"></div>
+    <!-- HOW IT WORKS -->
+    <section class="howto section" id="howto">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Hogyan működik</p>
+          <h2>4 lépés a komfortig</h2>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">01</div>
+            <h4>Kapcsolatfelvétel</h4>
+            <p>
+              Írjon vagy hívjon minket – rövid időn belül visszajelzünk és
+              időpontot egyeztetünk.
+            </p>
+          </div>
+          <div class="step-arrow">→</div>
+          <div class="step">
+            <div class="step-num">02</div>
+            <h4>Helyszíni felmérés</h4>
+            <p>
+              Szakembereink felmérik az ingatlant és személyre szabott ajánlatot
+              adnak.
+            </p>
+          </div>
+          <div class="step-arrow">→</div>
+          <div class="step">
+            <div class="step-num">03</div>
+            <h4>Telepítés</h4>
+            <p>Precíz és gyors kivitelezés – egy munkanap alatt.</p>
+          </div>
+          <div class="step-arrow">→</div>
+          <div class="step">
+            <div class="step-num">04</div>
+            <h4>Átadás &amp; garancia</h4>
+            <p>
+              Betanítjuk a kezelést, átadjuk a dokumentációt és érvényesítjük a
+              garanciát.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <script>
-    // Hamburger
-    const hamburger = document.getElementById('hamburger');
-    const mobileMenu = document.getElementById('mobileMenu');
-    hamburger.addEventListener('click', () => {
-      hamburger.classList.toggle('open');
-      mobileMenu.classList.toggle('open');
-    });
-    mobileMenu.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', () => {
-        hamburger.classList.remove('open');
-        mobileMenu.classList.remove('open');
+    <!-- BRANDS -->
+    <section class="brands section" id="brands">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Márkáink</p>
+          <h2>Prémium gyártói partnerségek</h2>
+          <p class="section-desc">
+            Csak elismert, megbízható gyártók termékeit telepítjük és szereljük.
+          </p>
+        </div>
+        <div class="brands-grid">
+          <div class="brand-card">
+            <div class="brand-logo">GREE</div>
+            <p>
+              A világ piacvezető márkája, amely kiemelkedő tartósságáról és
+              innovatív megoldásairól híres. Legyen szó perzselő hőségről vagy
+              kemény fagyokról, a GREE technológiája minden körülmény között
+              stabil és hatékony teljesítményt nyújt.
+            </p>
+          </div>
+          <div class="brand-card brand-card--accent">
+            <div class="brand-logo">MIDEA</div>
+            <p>
+              A világ egyik legnagyobb gyártójának megbízható technológiája,
+              amely pénztárcabarát áron hozza el otthonába az intelligens
+              hűtést. Tökéletes választás, ha modern funkciókat és
+              energiahatékonyságot keres kompromisszumok nélkül.
+            </p>
+          </div>
+          <div class="brand-card">
+            <div class="brand-logo">Syen & Kinghome</div>
+            <p>
+              A GREE gyáraiból érkező, kiemelkedő ár-érték arányú márkák,
+              amelyek a bizonyított technikai hátteret teszik mindenki számára
+              elérhetővé.
+            </p>
+          </div>
+          <div class="brand-card">
+            <div class="brand-logo">LG</div>
+            <p>
+              A stílusos megjelenés és innovatív technológia úttörője, amely
+              látványos dísze és intelligens központja lehet otthonának.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HEM -->
+    <section class="hem section" id="hem">
+      <div class="container">
+        <div class="hem-inner">
+          <div class="hem-text">
+            <p class="section-label">Állami támogatás</p>
+            <h2>
+              HEM program –<br /><span class="accent">akár 30% támogatás</span>
+            </h2>
+            <p>
+              A Háztartási Energetikai Modernizációs (HEM) program keretében
+              lakossági ügyfelek vissza nem térítendő támogatást igényelhetnek
+              energiahatékony hőszivattyú és klímarendszer telepítéséhez.
+              Segítünk a teljes ügyintézésben, az igénylésétől a kivitelezésig.
+            </p>
+            <a
+              href="#contact"
+              class="btn-primary"
+              style="margin-top: 12px; display: inline-flex"
+              >Érdeklődjön most →</a
+            >
+          </div>
+          <div class="hem-cards">
+            <div class="hem-card">
+              <h4>Vissza nem térítendő támogatás</h4>
+              <p>
+                A beruházás akár 30%-a visszaigényelhető állami forrásból, a
+                készülék típusától és az ingatlan besorolásától függően.
+              </p>
+            </div>
+            <div class="hem-card">
+              <h4>Segítünk az igénylésben</h4>
+              <p>
+                Az adminisztráció összetett lehet – mi végigkísérjük az
+                igénylési folyamatot és biztosítjuk a szükséges dokumentációt.
+              </p>
+            </div>
+            <div class="hem-card">
+              <h4>Lakóépületekre vonatkozik</h4>
+              <p>
+                A program elsősorban meglévő lakóingatlanok energetikai
+                korszerűsítésére irányul, hőszivattyú és split rendszer
+                telepítésére egyaránt.
+              </p>
+            </div>
+          </div>
+        </div>
+        <p class="hem-disclaimer">
+          A támogatás mértéke és feltételei változhatnak. A pontos feltételekről
+          érdeklődjön nálunk vagy a hivatalos pályázati kiírásban.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Kapcsolat</p>
+          <h2>Kérjen ingyenes ajánlatot!</h2>
+          <p class="section-desc">
+            Töltse ki az alábbi űrlapot és hamarosan felvesszük Önnel a
+            kapcsolatot.
+          </p>
+        </div>
+        <div class="contact-wrapper">
+          <form class="contact-form" onsubmit="handleSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Neve</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Kovács János"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="phone">Telefonszám</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="+36 30 123 4567"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail cím</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="pelda@email.hu"
+              />
+            </div>
+            <div class="form-group">
+              <label for="service">Szolgáltatás</label>
+              <select id="service" name="service">
+                <option value="">Válasszon szolgáltatást...</option>
+                <option value="telepites">Split klíma telepítés</option>
+                <option value="hoszivattyu">Hőszivattyú telepítés</option>
+                <option value="karbantartas">Karbantartás / szerviz</option>
+                <option value="egyeb">Egyéb megkeresés</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Üzenet (opcionális)</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Írja le röviden az igényét, pl. ingatlan mérete, helyiség száma..."
+              ></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full">
+              Ajánlatot kérek →
+            </button>
+            <p class="form-note">
+              Az adatokat kizárólag a megkeresés megválaszolásához használjuk
+              fel.
+            </p>
+          </form>
+          <div class="contact-info">
+            <div class="ci-item">
+              <div class="ci-icon">📞</div>
+              <div>
+                <strong>Telefon</strong>
+                <a href="tel:+36301234567">+36 70 405 9494</a>
+              </div>
+            </div>
+            <div class="ci-item">
+              <div class="ci-icon">✉️</div>
+              <div>
+                <strong>E-mail</strong>
+                <a href="mailto:cryzenklima@gmail.com">cryzenklima@gmail.com</a>
+              </div>
+            </div>
+            <div class="ci-item">
+              <div class="ci-icon">📍</div>
+              <div>
+                <strong>Munkaterület</strong>
+                <span>Budapest és agglomeráció</span>
+              </div>
+            </div>
+            <div class="ci-item">
+              <div class="ci-icon">🕐</div>
+              <div>
+                <strong>Elérhetőség</strong>
+                <span>H–V: 6:00 – 22:00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <span class="logo-cryo">CRYO</span><span class="logo-zen">ZEN</span>
+            <span class="logo-sub">KLÍMA</span>
+          </a>
+          <p>Precíziós klímaszerelés és karbantartás – megbízható csapattól.</p>
+        </div>
+        <div class="footer-links">
+          <strong>Szolgáltatások</strong>
+          <a href="#services">Split klíma telepítés</a>
+          <a href="#services">Hőszivattyú telepítés</a>
+          <a href="#services">Karbantartás &amp; szerviz</a>
+        </div>
+        <div class="footer-links">
+          <strong>Partnerek</strong>
+          <a href="#brands">Gree</a>
+          <a href="#brands">Midea</a>
+          <a href="#brands">Daikin</a>
+        </div>
+        <div class="footer-links">
+          <strong>Kapcsolat</strong>
+          <a href="tel:+36704059494">+36 70 405 9494</a>
+          <a href="mailto:cryzenklima@gmail.com">cryzenklima@gmail.com</a>
+          <span>Budapest és agglomeráció</span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <span>© 2026 Cryozen Klíma. Minden jog fenntartva.</span>
+        </div>
+      </div>
+    </footer>
+
+    <div id="toast" class="toast" aria-live="polite"></div>
+
+    <script>
+      // Hamburger
+      const hamburger = document.getElementById("hamburger");
+      const mobileMenu = document.getElementById("mobileMenu");
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("open");
+        mobileMenu.classList.toggle("open");
       });
-    });
+      mobileMenu.querySelectorAll("a").forEach((a) => {
+        a.addEventListener("click", () => {
+          hamburger.classList.remove("open");
+          mobileMenu.classList.remove("open");
+        });
+      });
 
-    // Sticky nav shadow
-    window.addEventListener('scroll', () => {
-      document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 20);
-    });
+      // Sticky nav shadow
+      window.addEventListener("scroll", () => {
+        document
+          .querySelector(".navbar")
+          .classList.toggle("scrolled", window.scrollY > 20);
+      });
 
-    // Form submit
-    function handleSubmit(e) {
-      e.preventDefault();
-      const f = e.target;
-      const name    = f.name.value;
-      const phone   = f.phone.value;
-      const email   = f.email.value;
-      const service = f.service.options[f.service.selectedIndex].text;
-      const message = f.message.value;
+      // Form submit
+      function handleSubmit(e) {
+        e.preventDefault();
+        const f = e.target;
+        const name = f.name.value;
+        const phone = f.phone.value;
+        const email = f.email.value;
+        const service = f.service.options[f.service.selectedIndex].text;
+        const message = f.message.value;
 
-      const subject = encodeURIComponent('Ajánlatkérés – ' + (f.service.value ? service : 'Általános'));
-      const body = encodeURIComponent(
-        'Név: ' + name + '\n' +
-        'Telefon: ' + phone + '\n' +
-        (email ? 'E-mail: ' + email + '\n' : '') +
-        'Szolgáltatás: ' + (f.service.value ? service : '–') + '\n' +
-        (message ? '\nÜzenet:\n' + message : '')
+        const subject = encodeURIComponent(
+          "Ajánlatkérés – " + (f.service.value ? service : "Általános"),
+        );
+        const body = encodeURIComponent(
+          "Név: " +
+            name +
+            "\n" +
+            "Telefon: " +
+            phone +
+            "\n" +
+            (email ? "E-mail: " + email + "\n" : "") +
+            "Szolgáltatás: " +
+            (f.service.value ? service : "–") +
+            "\n" +
+            (message ? "\nÜzenet:\n" + message : ""),
+        );
+
+        window.location.href =
+          "mailto:info@cryozen-klima.hu?subject=" + subject + "&body=" + body;
+      }
+
+      function showToast(msg) {
+        const t = document.getElementById("toast");
+        t.textContent = msg;
+        t.classList.add("show");
+        setTimeout(() => t.classList.remove("show"), 4000);
+      }
+
+      // Intersection Observer for fade-in
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("visible");
+              observer.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.12 },
       );
-
-      window.location.href = 'mailto:info@cryozen-klima.hu?subject=' + subject + '&body=' + body;
-    }
-
-    function showToast(msg) {
-      const t = document.getElementById('toast');
-      t.textContent = msg;
-      t.classList.add('show');
-      setTimeout(() => t.classList.remove('show'), 4000);
-    }
-
-    // Intersection Observer for fade-in
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('visible');
-          observer.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.12 });
-    document.querySelectorAll('.service-card, .step, .brand-card, .about-feat, .av-card, .ci-item').forEach(el => {
-      el.classList.add('fade-in');
-      observer.observe(el);
-    });
-  </script>
-</body>
-
+      document
+        .querySelectorAll(
+          ".service-card, .step, .brand-card, .about-feat, .av-card, .ci-item",
+        )
+        .forEach((el) => {
+          el.classList.add("fade-in");
+          observer.observe(el);
+        });
+    </script>
+  </body>
 </html>

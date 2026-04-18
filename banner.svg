@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 312" fill="none" role="img" aria-label="Cryozen Klíma banner">
+
+  <!-- Fehér alap -->
+  <rect width="820" height="312" fill="#ffffff"/>
+
+  <!-- Zöld bal panel (ferde vágással) -->
+  <path d="M 0,0 L 430,0 L 390,312 L 0,312 Z" fill="#2a7a4b"/>
+  <path d="M 0,0 L 430,0 L 390,312 L 0,312 Z" fill="url(#panelGrad)"/>
+
+  <defs>
+    <linearGradient id="panelGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1f5c38"/>
+      <stop offset="100%" stop-color="#2a7a4b" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Dekoratív körök (jobb oldal, halványzöld) -->
+  <circle cx="680" cy="-20" r="180" fill="#e8f5ee" opacity="0.5"/>
+  <circle cx="800" cy="340" r="140" fill="#e8f5ee" opacity="0.35"/>
+
+  <!-- Bal oldali fehér hangsúlyvonal -->
+  <rect x="34" y="70" width="4" height="172" rx="2" fill="white" opacity="0.6"/>
+
+  <!-- CRYOZEN főszöveg -->
+  <text
+    x="52" y="174"
+    font-family="'Segoe UI', system-ui, -apple-system, sans-serif"
+    font-size="64"
+    font-weight="800"
+    letter-spacing="-1"
+  >
+    <tspan fill="white">CRYO</tspan><tspan fill="#a8dfc0">ZEN</tspan>
+  </text>
+
+  <!-- KLÍMA alcím a zöld panelen -->
+  <text
+    x="55" y="200"
+    font-family="'Segoe UI', system-ui, -apple-system, sans-serif"
+    font-size="13"
+    font-weight="700"
+    letter-spacing="9"
+    fill="white"
+    opacity="0.55"
+  >KLÍMA</text>
+
+  <!-- Elválasztó vonal a jobb oldalon -->
+  <rect x="450" y="85" width="3" height="142" rx="1.5" fill="#2a7a4b" opacity="0.18"/>
+
+  <!-- Tagline jobb oldal -->
+  <text
+    x="470" y="148"
+    font-family="'Segoe UI', system-ui, -apple-system, sans-serif"
+    font-size="24"
+    font-weight="700"
+    fill="#1a1a1a"
+    letter-spacing="-0.3"
+  >Precíziós klímaszerelés</text>
+
+  <text
+    x="470" y="178"
+    font-family="'Segoe UI', system-ui, -apple-system, sans-serif"
+    font-size="24"
+    font-weight="700"
+    fill="#1a1a1a"
+    letter-spacing="-0.3"
+  >és karbantartás</text>
+
+  <!-- Zöld vonal a tagline alatt -->
+  <rect x="470" y="193" width="120" height="2.5" rx="1.25" fill="#2a7a4b"/>
+
+  <!-- Alcím sor -->
+  <text
+    x="470" y="216"
+    font-family="'Segoe UI', system-ui, -apple-system, sans-serif"
+    font-size="12"
+    font-weight="500"
+    fill="#6b6b6b"
+    letter-spacing="0.2"
+  >Budapest &amp; agglomeráció · 10 év telepítési garancia</text>
+
+</svg>
