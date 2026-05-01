@@ -1018,6 +1018,23 @@ img {
   }
 }
 
+@media (max-width: 1200px) {
+  .usp-inner {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-content: center;
+    gap: 16px 24px;
+  }
+  .usp-item {
+    justify-content: flex-start;
+    padding: 10px 20px;
+    white-space: normal;
+  }
+  .usp-divider {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   .section {
     padding: 64px 0;
@@ -1052,14 +1069,11 @@ img {
     padding: 0;
   }
   .usp-inner {
-    flex-wrap: wrap;
+    grid-template-columns: max-content;
+    justify-content: center;
   }
   .usp-item {
-    padding: 10px 20px;
-    white-space: normal;
-  }
-  .usp-divider {
-    display: none;
+    justify-content: flex-start;
   }
   .contact-wrapper {
     grid-template-columns: 1fr;
